@@ -9,10 +9,6 @@ using System.Threading.Tasks;
 
     public string Type { get; set; }
 
-    public ICollection<Task> Tasks { get; set; }
-    public Task_Category()
-    {
-        Tasks = new List<Task>();
-    }
+    public List<Task> Tasks { get; set; }  
 }
 

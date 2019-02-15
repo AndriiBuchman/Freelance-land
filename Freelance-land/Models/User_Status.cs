@@ -9,10 +9,6 @@ using System.Threading.Tasks;
 
     public string Type { get; set; }
 
-    public ICollection<User> Users { get; set; }
-    public User_Status()
-    {
-        Users = new List<User>();
-    }
+    public List<User> Users { get; set; }
 }
 

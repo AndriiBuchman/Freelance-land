@@ -9,13 +9,13 @@ using System.Threading.Tasks;
 
     public DateTime Date { get; set; }
 
-    public int? Task_Executor_Id { get; set; }
-    public User Task_Executor { get; set; }
+    public int? TaskExecutorId { get; set; }
+    public User TaskExecutor { get; set; }
 
-    public int? Task_Customer_Id { get; set; }
-    public User Task_Customer { get; set; }
+    public int? TaskCustomerId { get; set; }
+    public User TaskCustomer { get; set; }
 
-    public int? Task_Id { get; set; }
+    public int? TaskId { get; set; }
     public Task Task { get; set; }
 }
 

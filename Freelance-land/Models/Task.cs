@@ -17,16 +17,12 @@ using System.Threading.Tasks;
 
     public DateTime Deadline { get; set; }
 
-    public int? Status_Id { get; set; } 
-    public Task_Status Task_Status { get; set; }
+    public int? TaskStatusId { get; set; } 
+    public Task_Status TaskStatus { get; set; }
 
-    public int? Task_Category_Id { get; set; }
-    public Task_Category Task_Category { get; set; }
+    public int? TaskCategoryId { get; set; }
+    public Task_Category TaskCategory { get; set; }
 
-    public ICollection<Task_History> Task_Histories { get; set; }
-    public Task()
-    {
-        Task_Histories = new List<Task_History>();
-    }
+    public List<Task_History> TaskHistories { get; set; }
 }
 

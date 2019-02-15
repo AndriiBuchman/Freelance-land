@@ -12,10 +12,10 @@ using System.Threading.Tasks;
 
     public string Description { get; set; }
 
-    public int? Executor_Id { get; set; }
+    public int? ExecutorId { get; set; }
     public User Executor { get; set; }
 
-    public int? Customer_Id { get; set; }
+    public int? CustomerId { get; set; }
     public User Customer { get; set; }
 }
 

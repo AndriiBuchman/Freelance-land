@@ -21,19 +21,12 @@ public class User
 
     public string Password { get; set; }
 
-    public ICollection<Review> Customer_Reviews { get; set; }
-    public ICollection<Review> Executor_Reviews { get; set; }
-    public ICollection<Task_History> Customer_History { get; set; }
-    public ICollection<Task_History> Executor_History { get; set; }
-    public User()
-    {
-        Executor_Reviews = new List<Review>();
-        Customer_Reviews = new List<Review>();
-        Customer_History = new List<Task_History>();
-        Executor_History = new List<Task_History>();
-    }
+    public List<Review> CustomerReviews { get; set; }
+    public List<Review> ExecutorReviews { get; set; }
+    public List<Task_History> CustomerHistories { get; set; }
+    public List<Task_History> ExecutorHistories { get; set; }
 
-    public int? User_Status_Id { get; set; }
-    public User_Status User_Status { get; set; }
+    public int? UserStatusId { get; set; }
+    public User_Status UserStatus { get; set; }
 
 }
