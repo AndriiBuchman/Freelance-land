@@ -14,11 +14,13 @@ namespace Freelance_land
     {
         public static void Main(string[] args)
         {
-            CreateWebHostBuilder(args).Build().Run();
+            using (ApplicationContext db = new ApplicationContext())
+            {
+                User u1 = new User { Name = "Барселона" };
+                db.Users.Add(u1);
+                db.SaveChanges();
+                
+            }
         }
-
-        public static IWebHostBuilder CreateWebHostBuilder(string[] args) =>
-            WebHost.CreateDefaultBuilder(args)
-                .UseStartup<Startup>();
     }
 }

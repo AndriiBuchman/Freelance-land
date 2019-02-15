@@ -21,12 +21,12 @@ public class User
 
     public string Password { get; set; }
 
-    public List<Review> CustomerReviews { get; set; }
-    public List<Review> ExecutorReviews { get; set; }
-    public List<Task_History> CustomerHistories { get; set; }
-    public List<Task_History> ExecutorHistories { get; set; }
+    public List<Review> UserReviews { get; set; }
+    public List<TaskHistory> UserHistories { get; set; }
+    public List<Message> UserMessages { get; set; }
+    public List<Comment> UserComments { get; set; } 
 
-    public int? UserStatusId { get; set; }
-    public User_Status UserStatus { get; set; }
+    public int? UserRoleId { get; set; }
+    public UserRoles UserRole { get; set; }
 
 }

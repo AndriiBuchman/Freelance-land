@@ -18,11 +18,11 @@ using System.Threading.Tasks;
     public DateTime Deadline { get; set; }
 
     public int? TaskStatusId { get; set; } 
-    public Task_Status TaskStatus { get; set; }
+    public TaskStatus TaskStatus { get; set; }
 
     public int? TaskCategoryId { get; set; }
-    public Task_Category TaskCategory { get; set; }
+    public TaskCategory TaskCategory { get; set; }
 
-    public List<Task_History> TaskHistories { get; set; }
+    public List<TaskHistory> TaskHistories { get; set; }
 }
 

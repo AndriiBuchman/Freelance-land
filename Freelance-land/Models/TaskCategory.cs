@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-    public class Task_Category
+    public class TaskCategory
 {
     public int Id { get; set; }
 
